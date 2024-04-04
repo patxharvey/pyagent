@@ -36,7 +36,7 @@ def build_tools_from_datasets(data_folder, instruction_str):
     """
 
     import pandas as pd
-    tools = [note_engine]  # Assuming 'note_engine' is predefined
+    tools = [note_engine]
     dataset_paths = load_datasets_from_folder(data_folder)
     
     for path in dataset_paths:
@@ -59,11 +59,11 @@ load_dotenv()
 data_folder = "data"
 tools = build_tools_from_datasets(data_folder, instruction_str)
 
-# Initialize the agent with the dynamically built tools
+# Initialize the agent with dynamically built tools
 llm = OpenAI(model="gpt-3.5-turbo-0613")
 agent = ReActAgent.from_tools(tools, llm=llm, verbose=True, context=context)
 
-# Example interactive loop
+# command line loop
 while (prompt := input("Enter a prompt (q to quit): ")) != "q":
     result = agent.query(prompt)
     print(result)
