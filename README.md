@@ -24,17 +24,22 @@ Performs best when data is cleaned beforehand.
 
 1. Clone the repository to your local machine:
 
-   ```git clone https://your-repository-url.git```
+   ```
+   git clone https://your-repository-url.git
+   ```
 
 2. Navigate to the project directory:
 
-    ```cd your/path/py-agent```
+    ```
+    cd your/path/py-agent
+    ```
 
 3. Install the required Python packages:
     
-  bash
-Copy code 
-  ```pip install -r requirements.txt```
+  ```
+  bash 
+  pip install -r requirements.txt
+  ```
 
 4. Set up your .env file with the necessary environment variables.
 
