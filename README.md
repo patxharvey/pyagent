@@ -25,7 +25,7 @@ Performs best when data is cleaned beforehand.
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://your-repository-url.git
+   git clone git@github.com:pxthxrv/pyagent.git
    ```
 
 2. Navigate to the project directory:
@@ -34,25 +34,29 @@ Performs best when data is cleaned beforehand.
     cd your/path/py-agent
     ```
 
-3. Install the required Python packages:
-    
-  ```
-  bash 
-  pip install -r requirements.txt
-  ```
+3. (Optional) Create and activate virtual environment
 
-4. Set up your .env file with the necessary environment variables.
+4. Install the required Python packages:
+    
+    ```
+    pip install -r requirements.txt
+    ```
+
+5. Set up your .env file with the necessary environment variables.
 
 ### Usage
 
 1. Place your CSV data files into the data folder.
 
 2. Run the main script to start the interactive prompt:
-bash
-Copy code
-python3 dynamic_builder.py
-Follow the interactive prompt to enter your queries and receive responses augmented with data from your datasets.
-Contributing
+
+    ```
+    python3 main.py
+    ```
+
+3. Follow the interactive prompts to enter your queries and receive pandas generated insights from your datasets.
+
+## Contributing
 
 Contributions to improve the project are welcome. Please follow these steps to contribute:
 
@@ -61,10 +65,3 @@ Create a new branch for your feature (git checkout -b feature/AmazingFeature).
 Commit your changes (git commit -m 'Add some AmazingFeature').
 Push to the branch (git push origin feature/AmazingFeature).
 Open a pull request.
-License
-
-[Specify your project's license here]
-
-Acknowledgments
-
-Acknowledge any projects, libraries, or individuals that contributed to your project.
