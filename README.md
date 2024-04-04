@@ -32,8 +32,9 @@ Performs best when data is cleaned beforehand.
 
 3. Install the required Python packages:
     
-    ```bash
-Copy code pip install -r requirements.txt```
+  bash
+Copy code 
+  ```pip install -r requirements.txt```
 
 4. Set up your .env file with the necessary environment variables.
 
